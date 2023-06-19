@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 1000px;
+    height: 500px;
+    border-radius: 30px;
+    background-color: blue;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides{
+    width: 5000px;
+    height: 500px;
+    display: flex;
+    transition: all .5s ease-in;
+    
+}
+
+.box{
+    width: 1000px;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+}
+
+.buttons{
+    position: absolute; 
+    bottom: 30px;
+    left: 50px;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    display: flex;
+}
+
+
+
+.next,.prev{
+    margin: 0 10px;
+    cursor: pointer;
+
+}
+.next.show{
+    transform: translateX(1000px);
+    transition: 1s;
+}
+
+.box1{
+    background-image: url(./dhiva-krishna-X16zXcbxU4U-unsplash.jpg);
+}
+
+.box2{
+    background-image: url(./grahame-jenkins-p7tai9P7H-s-unsplash.jpg);
+}
+.box3{
+    background-image: url(./hyundai-motor-group-a3vDd8hzuYs-unsplash.jpg);
+}
+
+
+.box4{
+    background-image: url(./hyundai-motor-group-r90ZgffimHk-unsplash.jpg);
+}
+
+.box5{
+    background-image: url(./sven-d-a4S6KUuLeoM-unsplash.jpg);
+}
